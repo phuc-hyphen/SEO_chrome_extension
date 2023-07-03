@@ -1,0 +1,45 @@
+{
+    "manifest_version": 3,
+    "name": "Ad injector",
+    "version": "1.0",
+    "description": "changes the background of the page to a random color",
+    "icons": {
+        "16": "/images/funnytur.png",
+        "48": "/images/trio_logo.png",
+        "128": "/images/trio_logo.png"
+    },
+    "permissions": [
+        "tabs",
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ],
+    
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/images/trio_logo.png",
+            "48": "/images/trio_logo.png",
+            "128": "/images/trio_logo.png"
+        },
+        "default_title": "inject ad popup"
+        
+    }
+    
+}

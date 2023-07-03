@@ -1,0 +1,23 @@
+html body{
+    /* background-color: #000000 !important; */
+    background-image: url("https://img.freepik.com/free-photo/beautiful-milky-way-night-sky_53876-139825.jpg?w=1480&t=st=1686598558~exp=1686599158~hmac=0173b8bd6a784c8a17ca22dfe7af7f8d2e0479a316a89142ef106d8868adddea") !important;
+}
+.adbox {
+    width: 500px;
+    border: 3px dotted;
+    border-color:#ffac81;
+    border-radius: 10px;
+    padding:5px 10px 5px 10px;
+    background-color:#f6e8ea;
+  }
+  
+  .adbox h3 {
+      font-size:22px;
+  }
+  
+  .adbox img {display:inline;
+  padding:0 8px 0 0;}
+  
+  p.td-text {font-size:10px;
+    
+  }
